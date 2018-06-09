@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+          
+          <hibernate-mapping>
+          <class name="model.Player" table="Player100" >
+          <id name="pid"  column="PID"><generator class="assigned"></generator></id>
+          <property name="pName" column="PNAME"></property>
+          <property name="pAge"  column="PAGE"></property>
+          <property name="tid" column="TID" insert="false" update="false"></property>
+          <many-to-one name="team" class="model.Team" column="TID" cascade="all"></many-to-one>
+          </class>
+          </hibernate-mapping>
