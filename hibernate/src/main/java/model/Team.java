@@ -1,11 +1,11 @@
 package model;
 
-import java.util.List;
+import java.util.Set;
 
 public class Team {
 	private int tid;
 	private String tName;
-	private List<Player> player;
+	private Set<Player> player;
 	public int getTid() {
 		return tid;
 	}
@@ -18,11 +18,11 @@ public class Team {
 	public void settName(String tName) {
 		this.tName = tName;
 	}
-	public List<Player> getPlayer() {
+	public Set<Player> getPlayer() {
 		return player;
 	}
-	public void setPlayer(List<Player> player) {
-		this.player = player;
+	public void setPlayer(Set<Player> saveplayer) {
+		this.player = saveplayer;
 	}
 	
 
