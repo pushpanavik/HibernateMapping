@@ -4,7 +4,7 @@
           "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
           
           <hibernate-mapping>
-          <class name="model.Player" table="Player100" >
+          <class name="model.Player" table="Player" >
           <id name="pid"  column="PID"><generator class="assigned"></generator></id>
           <property name="pName" column="PNAME"></property>
           <property name="pAge"  column="PAGE"></property>

@@ -3,14 +3,14 @@
           "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
           "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   <hibernate-mapping>
-  <class name="model.Team" table="Cricket" schema="system">
+  <class name="model.Team" table="CricketTeam" schema="system">
   <id name="tid">
   <generator class="assigned"></generator>
   </id>
   <property name="tName" column="Team_Name" not-null="true" length="20"></property>
-  <bag name="player" table="Player100"  cascade="all" inverse="true" >
+  <set name="player" table="Player100"  cascade="all" inverse="true" >
   <key column="tid"></key>
   <one-to-many class="model.Player" />
-  </bag>
+  </set>
   </class>
   </hibernate-mapping>
