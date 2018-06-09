@@ -36,7 +36,7 @@ public class App
         player.setpAge(50);
         player.setTeam(team);
         
-        List<Player> saveplayer=new ArrayList<Player>();
+       Set<Player> saveplayer=new HashSet<Player>();
         saveplayer.add(player);
         team.setPlayer(saveplayer);
        
